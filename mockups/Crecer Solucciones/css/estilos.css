@@ -1,0 +1,179 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: white transparent;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	width: auto;
+	height: 200px;
+	background: rgb(0, 153, 255);
+}
+nav{
+	display: block;
+	width: 250px;
+	top: 0px;
+	left: -100%;
+	position: absolute;
+	padding-left: 0px;
+	line-height: 42px;
+	height: 100%;
+	background: rgba(53,89,137,.5);
+	transition: .5s;
+	z-index: 2;
+}
+nav ul >li >div{
+	margin-top: 6em;
+}
+nav a{
+	list-style: none;
+	text-decoration: none;
+	padding-left: 3px;
+	color: white;
+
+	
+}
+nav.active{
+	left:0px;
+}
+
+nav ul{
+	box-shadow: 4px 0 rgba(0, 102, 255,.4) inset;
+
+}
+nav ul li{
+	border-bottom: 1px solid white;
+	display: block;
+	left: 0px;
+	text-transform: uppercase;  
+}
+nav ul li ul{
+
+	display: none;
+	background: rgba(53,89,137,.8);
+	transition: 50s;
+}
+nav ul li:hover > ul{
+
+	display: block;
+}
+
+
+span{
+	padding-left: 4px;
+	padding-right: 5px;
+}
+h1{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+
+}
+h2{
+	display: block;
+	padding-bottom: 40px;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+p{
+
+}
+.boton-menu{
+
+	top: 30px;
+	left: 30px;
+	list-style: none;
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	font-size: 30px;
+	padding: 8px;
+	border: 1px solid white;
+	border-radius: 50%;
+	background: rgb(102, 153, 255);
+	color: white;
+	z-index: 3;
+}
+#Atributaria,#Acontable{
+	display: none;
+}
+
+.asesoria-tributaria{
+	width: auto;
+	text-align:justify;
+	background: #6495ED;
+	padding-bottom: 100px;
+
+}
+.caracteriticas-servicios{
+	width: 60%;
+	margin: auto;
+	display: block;
+	margin-top:100px;
+	margin-bottom: 100px;
+	line-height: 1.8em;
+	font-size: 1.3em;
+	color: white;
+	
+}
+.serviciocontablecontenedor{
+	width: auto;
+	text-align:justify;
+	background: #6495ED;
+	padding-bottom: 100px;
+}
+
+.serviciocontablegeneral{
+	width: 60%;
+	margin: auto;
+	display: block;
+	margin-top:100px;
+	margin-bottom: 100px;
+	line-height: 1.3em;
+	font-size: 1.3em;
+	color: white;
+}
+
+.image{
+	width: 100%;
+	height: auto;
+}
+#Showbutton {
+	width: 100px;
+    display: block;
+    padding: 1em;
+    margin: auto;
+    background-color: #79BD9A;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.descripcion{
+	width: 60%;
+	margin: auto;
+	color: white;
+	padding-top: 80px;
+	text-align: justify;
+	font-size: 1.3em;
+	display: none;
+}
+
+@media screen and (max-width: 650px) {
+	nav{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		z-index: 2;
+		background: rgba(14,14,15,.5);
+	}
+	.boton-menu{
+		z-index: 3;
+	}
+	.caracteriticas-servicios,.serviciocontablegeneral,.serviciocontablecontenedor,.descripcion{
+		font-size: 1em;
+	}
+}
